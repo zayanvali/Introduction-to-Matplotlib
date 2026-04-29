@@ -18,3 +18,24 @@ plt.pie(sections, labels = activities, colors = colors, startangle = 90, autopct
 plt.title("Pie Chart of Activities")
 plt.axis("equal")
 plt.show()
+
+#scatter plot
+x = ["school", "library", "hospital", "cafe", "shop"]
+y = [5, 4, 6, 3, 7]
+plt.scatter(x, y, color = "blue")
+plt.title("Scatter Plot")
+plt.xlabel("Places")
+plt.ylabel("Frequencies")
+plt.show()
+
+#stackplot
+days = [1, 2, 3, 4, 5]
+sports = [3, 2, 1, 2, 3]
+sightseeing = [5, 4, 6, 4, 3]
+cooking = [2, 3, 1, 4, 3]
+plt.stackplot(days, sports, sightseeing, cooking, labels = ["Sports, Sightseeing, Cooking"], colors = ["red", "green", "cyan"])
+plt.title("Daily Activities Over Time")
+plt.xlabel("Days")
+plt.ylabel("Hours")
+plt.legend(loc = "upper left")
+plt.show()
